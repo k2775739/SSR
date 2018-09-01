@@ -13,21 +13,21 @@ Server
 Debian / Ubuntu:
 
     apt-get install git
-    git clone https://github.com/shadowsocksr/shadowsocksr.git
+    git clone https://github.com/k2775739/SSR.git
 
 CentOS:
 
     yum install git
-    git clone https://github.com/shadowsocksr/shadowsocksr.git
+    git clone https://github.com/k2775739/SSR.git
 
 Windows:
 
-    git clone https://github.com/shadowsocksr/shadowsocksr.git
+    git clone https://github.com/k2775739/SSR.git
 
 ### Usage for single user on linux platform
 
-If you clone it into "~/shadowsocksr"  
-move to "~/shadowsocksr", then run:
+If you clone it into "./shadowsocksr"  
+move to "./shadowsocksr", then run:
 
     bash initcfg.sh
 
@@ -37,7 +37,7 @@ move to "~/shadowsocksr/shadowsocks", then run:
 
 Check all the options via `-h`.
 
-You can also use a configuration file instead (recommend), move to "~/shadowsocksr" and edit the file "user-config.json", then move to "~/shadowsocksr/shadowsocks" again, just run:
+You can also use a configuration file instead (recommend), move to "./shadowsocksr" and edit the file "user-config.json", then move to "./shadowsocksr/shadowsocks" again, just run:
 
     python server.py
 
