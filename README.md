@@ -86,6 +86,24 @@ WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 License for the specific language governing permissions and limitations
 under the License.
 
+
+    centos7 CHACHA20加密方法安装
+
+yum install m2crypto gcc -y
+wget -N --no-check-certificate https://github.com/jedisct1/libsodium/releases/download/1.0.8/libsodium-1.0.8.tar.gz
+tar zfvx libsodium-1.0.8.tar.gz
+cd libsodium-1.0.8
+./configure
+make && make install
+echo "include ld.so.conf.d/*.conf" > /etc/ld.so.conf
+echo "/lib" >> /etc/ld.so.conf
+echo "/usr/lib64" >> /etc/ld.so.conf
+echo "/usr/local/lib" >> /etc/ld.so.conf
+ldconfig
+
+
+
+
 Bugs and Issues
 ----------------
 
