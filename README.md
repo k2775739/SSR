@@ -89,17 +89,27 @@ under the License.
 
     centos7 CHACHA20加密方法安装
 
-yum install m2crypto gcc -y
-wget -N --no-check-certificate https://github.com/jedisct1/libsodium/releases/download/1.0.8/libsodium-1.0.8.tar.gz
-tar zfvx libsodium-1.0.8.tar.gz
-cd libsodium-1.0.8
-./configure
-make && make install
-echo "include ld.so.conf.d/*.conf" > /etc/ld.so.conf
-echo "/lib" >> /etc/ld.so.conf
-echo "/usr/lib64" >> /etc/ld.so.conf
-echo "/usr/local/lib" >> /etc/ld.so.conf
-ldconfig
+yum install m2crypto gcc -y<br>
+
+wget -N --no-check-certificate https://github.com/jedisct1/libsodium/releases/download/1.0.8/libsodium-1.0.8.tar.gz<br>
+
+tar zfvx libsodium-1.0.8.tar.gz<br>
+
+cd libsodium-1.0.8<br>
+
+./configure<br>
+
+make && make install<br>
+
+echo "include ld.so.conf.d/*.conf" > /etc/ld.so.conf<br>
+
+echo "/lib" >> /etc/ld.so.conf<br>
+
+echo "/usr/lib64" >> /etc/ld.so.conf<br>
+
+echo "/usr/local/lib" >> /etc/ld.so.conf<br>
+
+ldconfig<br>
 
 
 
