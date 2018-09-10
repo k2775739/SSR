@@ -87,29 +87,29 @@ License for the specific language governing permissions and limitations
 under the License.
 
 
-    centos7 CHACHA20加密方法安装
+centos7 CHACHA20加密方法安装
 
-yum install m2crypto gcc -y<br>
+        yum install m2crypto gcc -y<br>
 
-wget -N --no-check-certificate https://github.com/jedisct1/libsodium/releases/download/1.0.8/libsodium-1.0.8.tar.gz<br>
+        wget -N --no-check-certificate https://github.com/jedisct1/libsodium/releases/download/1.0.8/libsodium-1.0.8.tar.gz<br>
 
-tar zfvx libsodium-1.0.8.tar.gz<br>
+        tar zfvx libsodium-1.0.8.tar.gz<br>
 
-cd libsodium-1.0.8<br>
+        cd libsodium-1.0.8<br>
 
-./configure<br>
+        ./configure<br>
 
-make && make install<br>
+        make && make install<br>
 
-echo "include ld.so.conf.d/*.conf" > /etc/ld.so.conf<br>
+        echo "include ld.so.conf.d/*.conf" > /etc/ld.so.conf<br>
 
-echo "/lib" >> /etc/ld.so.conf<br>
+        echo "/lib" >> /etc/ld.so.conf<br>
 
-echo "/usr/lib64" >> /etc/ld.so.conf<br>
+        echo "/usr/lib64" >> /etc/ld.so.conf<br>
 
-echo "/usr/local/lib" >> /etc/ld.so.conf<br>
+        echo "/usr/local/lib" >> /etc/ld.so.conf<br>
 
-ldconfig<br>
+        ldconfig<br>
 
 
 
