@@ -87,7 +87,7 @@ License for the specific language governing permissions and limitations
 under the License.
 
 
-centos7 CHACHA20加密方法安装
+centos7 CHACHA20
 
         yum install m2crypto gcc -y<br>
 
