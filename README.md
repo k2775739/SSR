@@ -26,18 +26,18 @@ Windows:
 
 ### Usage for single user on linux platform
 
-If you clone it into `~/shadowsocksr`  
-move to `~/shadowsocksr`, then run:
+If you clone it into `~/SSR`  
+move to `~/SSR`, then run:
 
     bash initcfg.sh
 
-move to `~/shadowsocksr/shadowsocks`, then run:
+move to `~/SSR/shadowsocks`, then run:
 
     python server.py -p 443 -k password -m aes-128-cfb -O auth_aes128_md5 -o tls1.2_ticket_auth_compatible
 
 Check all the options via `-h`.
 
-You can also use a configuration file instead (recommend), move to `~/shadowsocksr` and edit the file `user-config.json`, then move to `~/shadowsocksr/shadowsocks` again, just run:
+You can also use a configuration file instead (recommend), move to `~/SSR` and edit the file `user-config.json`, then move to `~/SSR/shadowsocks` again, just run:
 
     python server.py
 
@@ -89,27 +89,27 @@ under the License.
 
 centos7 CHACHA20
 
-        yum install m2crypto gcc -y<br>
+        yum install m2crypto gcc -y
 
-        wget -N --no-check-certificate https://github.com/jedisct1/libsodium/releases/download/1.0.8/libsodium-1.0.8.tar.gz<br>
+        wget -N --no-check-certificate https://github.com/jedisct1/libsodium/releases/download/1.0.8/libsodium-1.0.8.tar.gz
 
-        tar zfvx libsodium-1.0.8.tar.gz<br>
+        tar zfvx libsodium-1.0.8.tar.gz
 
-        cd libsodium-1.0.8<br>
+        cd libsodium-1.0.8
 
-        ./configure<br>
+        ./configure
 
-        make && make install<br>
+        make && make install
 
-        echo "include ld.so.conf.d/*.conf" > /etc/ld.so.conf<br>
+        echo "include ld.so.conf.d/*.conf" > /etc/ld.so.conf
 
-        echo "/lib" >> /etc/ld.so.conf<br>
+        echo "/lib" >> /etc/ld.so.conf
 
-        echo "/usr/lib64" >> /etc/ld.so.conf<br>
+        echo "/usr/lib64" >> /etc/ld.so.conf
 
-        echo "/usr/local/lib" >> /etc/ld.so.conf<br>
+        echo "/usr/local/lib" >> /etc/ld.so.conf
 
-        ldconfig<br>
+        ldconfig
 
 
 
