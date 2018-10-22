@@ -110,6 +110,12 @@ centos7 CHACHA20
         echo "/usr/local/lib" >> /etc/ld.so.conf
 
         ldconfig
+        
+centos6 chacha20
+
+        # 修复关联
+        echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
+        ldconfig
 
 
 
